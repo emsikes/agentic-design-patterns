@@ -1,9 +1,9 @@
-from llm import client
+from llm import client, MODEL
 
 
 def generate_outline(state):
     response = client.chat.completions.create(
-        model="gpt-4.1-mini",
+        model=MODEL,
         messages=[
             {"role": "system", "content": "You are an expert blog planner."},
             {"role": "user", "content": f"Create a structured outline for a blog post about: {state['topic']}"}
@@ -13,7 +13,7 @@ def generate_outline(state):
 
 def generate_draft(state):
     response = client.chat.completions.create(
-        model="gpt-4.1-mini",
+        model=MODEL,
         messages=[
             {"role": "system", "content": "You are an expert blog post writeer."},
             {"role": "user", "content": f"Write a full blog post draft based on this outline:\n\n{state['outline']}"}
@@ -23,7 +23,7 @@ def generate_draft(state):
 
 def critique_draft(state):
     response = client.chat.completions.create(
-        model="gpt-4.1-mini",
+        model=MODEL,
         messages=[
             {"role": "system", "content": "You are a sharp editorial critic.  Be constructive but direct."},
             {"role": "user", 
@@ -36,7 +36,7 @@ def critique_draft(state):
 
 def refine_draft(state):
     response = client.chat.completions.create(
-        model="gpt-4.1-mini",
+        model=MODEL,
         messages=[
             {"role": "system", "content": "You are an expert editor who improves writing based on feedback."},
             {"role": "user", 
