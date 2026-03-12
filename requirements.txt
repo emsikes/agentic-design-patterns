@@ -3,3 +3,4 @@ openai
 python-dotenv
 pydantic
 httpx
+pyauogen==0.2.35
