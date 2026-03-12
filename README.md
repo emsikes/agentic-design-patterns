@@ -1,5 +1,13 @@
 # Agentic Design Patterns — Hands-On Mini Projects
 
+![Python](https://img.shields.io/badge/Python-3.11.9-blue?logo=python&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1.0.10-green?logo=langchain&logoColor=white)
+![CrewAI](https://img.shields.io/badge/CrewAI-latest-orange?logo=crewai&logoColor=white)
+![AutoGen](https://img.shields.io/badge/AutoGen-0.2.35-purple?logo=microsoft&logoColor=white)
+![OpenAI Agents SDK](https://img.shields.io/badge/OpenAI_Agents_SDK-latest-black?logo=openai&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-gpt--4.1--mini-74aa9c?logo=openai&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 A chapter-by-chapter implementation series based on **Agentic Design Patterns** by Antonio Gulli. Each chapter is paired with a focused mini-project that demonstrates the core pattern in working code.
 
 ## Goals
@@ -135,4 +143,4 @@ OPENAI_API_KEY=your-key-here
 
 - **Book:** Agentic Design Patterns by Antonio Gulli
 - **Python:** 3.11.9
-- **Primary LLM:** OpenAI GPT-4o-mini (chat completions API)
+- **Primary LLM:** OpenAI GPT-4.1-mini (chat completions API)
