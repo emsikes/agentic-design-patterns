@@ -4,3 +4,5 @@ python-dotenv
 pydantic
 httpx
 pyauogen==0.2.35
+crewai
+crewai-tools
